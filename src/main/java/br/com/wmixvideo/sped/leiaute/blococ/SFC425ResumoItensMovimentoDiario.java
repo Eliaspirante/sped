@@ -8,7 +8,7 @@ import br.com.wmixvideo.sped.util.SFStringBuilder;
 import br.com.wmixvideo.sped.util.SFUtil;
 
 public class SFC425ResumoItensMovimentoDiario implements SFLinha{
-	private SFTotalizadoresParciaisReducaoZ campo02TotalizadoresParciaisReducaoZ;
+	private String campo02CodigoItem;
 	private BigDecimal campo03ValorAcumuladoNoTotalizador;
     private String campo04NumeroTotalizadorMesmaCargaTributaria;
     private String campo05DescricaoTotalizadoresParciaisReducaoZ;
