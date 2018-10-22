@@ -22,15 +22,15 @@ public class SFC425ResumoItensMovimentoDiario implements SFLinha{
     public String toString() {
         final SFStringBuilder linha = new SFStringBuilder();
         linha.append(this.getCampo01CodigoRegistro());
-        linha.append(SFUtil.formatToString(this.campo02TotalizadoresParciaisReducaoZ));
+        linha.append(this.campo02CodigoItem);
         linha.append(SFUtil.formatToString(this.campo03ValorAcumuladoNoTotalizador));
         linha.append(this.campo04NumeroTotalizadorMesmaCargaTributaria);
         linha.append(this.campo05DescricaoTotalizadoresParciaisReducaoZ);
         return linha.toString();
     }
 
-    public SFC425ResumoItensMovimentoDiario setCampo02TotalizadoresParciaisReducaoZ(SFTotalizadoresParciaisReducaoZ campo02TotalizadoresParciaisReducaoZ) {
-        this.campo02TotalizadoresParciaisReducaoZ = campo02TotalizadoresParciaisReducaoZ;
+    public SFC425ResumoItensMovimentoDiario setCampo02CodigoItem(String campo02CodigoItem) {
+        this.campo02CodigoItem = campo02CodigoItem;
         return this;
     }
 }
